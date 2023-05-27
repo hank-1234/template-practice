@@ -97,8 +97,13 @@ header nav ul.main {
 }
 header nav ul.main li {
     float: left;
-    margin: 33px 10px 0 0;
+    margin: 27px 10px 0 0;
     font-size: 1.4rem;
+    opacity: 0;
+}
+header #menu:checked ~ nav li {
+    opacity: 1;
+    transition: ease .4s;
 }
 header nav ul.main li a {
     width: 160px;
@@ -165,7 +170,6 @@ header nav ul.main li a {
     display: block;
     text-align: center;
     color:rgb(210, 110, 210);
-    margin: 3px 0 0 0;
 }
 .nav li:hover a {
     color: white;
@@ -207,6 +211,7 @@ header nav ul.main li a {
 }
 .characters li img {
     border-radius: 50px;
+    margin: 0 auto;
 }
 .characters p {
     text-align: center;
@@ -341,8 +346,9 @@ header nav ul.main li a {
     text-align: left;
 }
 #staff h1{
+    width: 200px;
     position: relative;
-    /* left: 22vw; */
+    left: 22vw;
 } 
 #staff .staff_box{
     display: flex;
