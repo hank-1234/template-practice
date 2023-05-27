@@ -1,24 +1,98 @@
 @media (max-width: 770px){
-    section#main-page {
-        width: 100%;
-        height: 50vw;
-        position: relative;
-        padding: 0 0 190px;
-        background: url(picture/black.jpg) no-repeat;
-        background-size: 100%;
+    header .menu {
+        position: fixed;
+        top: 30px;
+        right: 30px;
     }
 }
 
-/*@media (max-width: 770px){
+@media (max-width: 770px){
+    header #menu:checked ~ .menu {
+        background: #fff;
+    }
+}
+
+@media (max-width: 770px){
+    header #menu:checked ~ .menu span{
+        background-color: #d6416e;
+    }
+}
+
+@media (max-width: 770px){
+    header #menu:checked ~ nav {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 0%;
+        opacity: 1;
+        transition: ease .2s;
+    }
+}
+
+@media (max-width: 770px){
+    header nav {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        opacity: 0;
+        transition: ease .2s;
+    }
+}
+
+@media (max-width: 770px){
+    header #menu:checked ~ nav ul {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 770px){
+    header nav ul.main {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 770px){
+    header nav ul.main li:nth-of-type(1) {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 770px){
+    header nav ul.main li {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 770px){
+    header nav ul.main li a {
+        height: 10vh;
+        text-align: left;
+    }
+}
+
+@media (max-width: 770px){
+    section#main-page {
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        padding: 0 0 25vh;
+        background: url(picture/black.jpg) no-repeat top center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 770px){
     .wrap {
         min-width: 100%;
         max-width: 100%;
     }
-}需除錯:縮小至一定程度網頁無法運行*/
+}
 
 @media (max-width: 770px){
     section#main-page ul.nav {
-        width: 690px;
+        width: 90vw;
         margin: 0;
         bottom: 0;
     }
@@ -26,14 +100,14 @@
 
 @media (max-width: 770px){
     section#main-page ul.nav li {
-        width: 340px;
-        margin: 0 0 10px;
+        width: 40vw;
+        margin: 0 2.5vw 10px 2.5vw;
     }
 }
 
 @media (max-width: 770px){
     section#main-page ul.nav li:nth-of-type(odd) {
-        margin: 0 10px 10px 0;
+        margin: 0 2.5vw 10px 2.5vw;
     }
 }
 
@@ -41,6 +115,29 @@
 @media (max-width: 770px){
     section#main-page ul.nav li a {
         height: 50px;
-        line-height: 50px;
+    }
+}
+
+@media (max-width: 770px){
+    section#character ul li{
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 770px){
+    section#story .illustration{
+        display: none;
+    }
+}
+
+@media (max-width: 770px){
+    section#story .story1{
+        right: 0;
+    }
+}
+
+@media (max-width: 770px){
+    section#story .illustration2{
+        display: none;
     }
 }
